@@ -1,11 +1,11 @@
 .hero img{
-    height: 300px;
-    width: 40%;
+    height: 200px;
+    float: right;
 }
 
 .info img{
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
 }
 
 body{
@@ -19,7 +19,6 @@ body{
 
 .header, .hero, .footer{
     background-color: #1F2937;
-    color: white;
 }
 
 body > div{
@@ -36,7 +35,23 @@ ul{
 
 a{
     text-decoration: none;
-    color: inherit;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button{
+    background-color: #3882f6;
+    color:#F9FAF8;
+    width: 120px;
+    padding: 8px 16px;
+    border-style: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.subtext{
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .header{
@@ -50,4 +65,28 @@ a{
 .header .logo{
     font-size: 24px;
     color: #F9FAF8;
+}
+
+.hero{
+    display: flex;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.hero .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hero .main{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.hero .image{
+    width: 600px;
 }
