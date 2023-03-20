@@ -26,7 +26,7 @@ body{
 }
 
 body > div{
-    padding: 0 10%;
+    padding: 0 15%;
     flex: 1;
 }
 
@@ -70,6 +70,7 @@ button{
 .header .logo{
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: bolder;
 }
 
 .hero{
@@ -175,4 +176,11 @@ button{
 .ad > .signup > button{
     border-style: solid;
     border-color: #F9FAF8;
+}
+
+.footer{
+    color: #E5E7EB;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
 }
