@@ -1,6 +1,5 @@
 .hero img{
     height: 200px;
-    float: right;
 }
 
 .info img{
@@ -9,10 +8,11 @@
 }
 
 body{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0;
     font-family: roboto, Arial, Helvetica, sans-serif;
 }
@@ -21,8 +21,13 @@ body{
     background-color: #1F2937;
 }
 
+.header, .footer{
+    flex: 0 0 auto;
+}
+
 body > div{
     padding: 0 10%;
+    flex: 1;
 }
 
 ul{
@@ -94,11 +99,11 @@ button{
 .info{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-evenly;
     gap: 36px;
-    padding-top: 36px;
-    padding-bottom: 48px;
+    padding-top: 48px;
+    padding-bottom: 60px;
     text-align: center;
 }
 
@@ -111,7 +116,7 @@ button{
 .info .blocks{
     display: flex;
     justify-content: space-evenly;
-    gap: 16px;
+    gap: 36px;
 }
 
 .info .blocks img{
@@ -120,4 +125,22 @@ button{
 
 .subtext.under-img{
     color: #464646;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    background-color: #E5E7EB;
+    color: #1F2937;
+}
+
+.quote .author{
+    align-self: flex-end;
 }
