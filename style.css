@@ -139,8 +139,40 @@ button{
     font-style: italic;
     background-color: #E5E7EB;
     color: #1F2937;
+    gap: 8px;
 }
 
 .quote .author{
     align-self: flex-end;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.ad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.ad .signup{
+    display: flex;
+    flex: 1;
+    background-color: #3882f6;
+    border-radius: 6px;
+    padding: 48px 60px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #F9FAF8;
+}
+
+.signup .main{
+    font-size: 24px;
+}
+
+.ad > .signup > button{
+    border-style: solid;
+    border-color: #F9FAF8;
 }
